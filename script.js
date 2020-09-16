@@ -47,13 +47,12 @@ function showStatus() {
 
 function writeYourGenres() {
     let x = 0;
-    while (x < 3){
-        let ans = prompt("Любимый жанр?", '');
-        if (isNaN(ans)){
+    while (x < 3) {
+        let ans = prompt("Любимый жанр?", "");
+        if (isNaN(ans)) {
             personalMovieDB.genres[x] = ans;
             x++;
-        }
-        else {
+        } else {
             alert("Повторите ввод");
         }
     }
